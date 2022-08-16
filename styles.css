@@ -19,7 +19,7 @@ p, input, label {
 }
 
 h1, h2 {
-  font-size: clamp(1.5rem, 5vw ,2rem);
+  font-size: clamp(1.75rem, 5vw ,2rem);
 }
 
 /* Definindo variáveis CSS de cores */
@@ -145,6 +145,11 @@ form {
 
 .radio-group label + label {
   margin-left: 1rem;
+}
+
+.radio-group label {
+  display: inline-flex;
+  gap: 0.25rem;
 }
 
 .button {

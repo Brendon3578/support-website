@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link de colocar fonte 'Roboto' -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/png" href="./icone.png"/>
+  <link rel="stylesheet" href="styles.css">
+  <title>Pesquisa de Suporte - Computador</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <h2>Pesquisa de manutenção de computadores</h2>
+      <p>
+        Responda a esta pesquisa para ajudar a Etec de Sapopemba a melhorar o funcionamento dos computadores.
+      </p>
+      <p>
+        Seu feedback é muito importante para a manutenção da nossas escola!
+      </p>
+    </div>
+
+    <form action="inserir.php" method="post">
+      <div class="container question">
+        <p>Qual é a máquina que apresenta o erro?</p>
+        <input type="text" name="nomeMaquina" placeholder="Máquina 1" required>
+      </div>
+
+      <div class="container question">
+        <p>A máquina pertence a qual laboratório?</p>
+        <input type="text" name="nomeLaboratorio" placeholder="Laboratório 1" required>
+      </div>
+
+      <div class="container question">
+        <p>O Mouse funciona corretamente?</p>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="mouseFunciona" value="sim" required> Sim
+          </label>
+          <label>
+            <input type="radio" name="mouseFunciona" value="nao" required> Não
+          </label>
+        </div>
+      </div>
+
+      <div class="container question">
+        <p>O monitor funciona corretamente?</p>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="monitorFunciona" value="sim" required> Sim
+          </label>
+          <label>
+            <input type="radio" name="monitorFunciona" value="nao" required> Não
+          </label>
+        </div>
+      </div>
+
+      <div class="container question">
+        <p>O teclado funciona corretamente?</p>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="tecladoFunciona" value="sim" required> Sim
+          </label>
+          <label>
+            <input type="radio" name="tecladoFunciona" value="nao" required> Não
+          </label>
+        </div>
+      </div>
+
+      <div class="container question">
+        <p>A máquina tem acesso à internet?</p>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="internetFunciona" value="sim" required> Sim
+          </label>
+          <label>
+            <input type="radio" name="internetFunciona" value="nao" required> Não
+          </label>
+        </div>
+      </div>
+
+      <div class="container question">
+        <p>O som consegue sair da máquina?</p>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="somFunciona" value="sim" required> Sim
+          </label>
+          <label>
+            <input type="radio" name="somFunciona" value="nao" required> Não
+          </label>
+        </div>
+      </div>
+
+      <div class="pseudo-container">
+        <input class="button" type="submit" value="Enviar">
+
+        <button class="button transparent">
+          Consultar
+        </button>
+      </div>
+    </form>
+
+    <div class="background"></div>
+  </main>
+</body>
+</html>
